@@ -1,0 +1,993 @@
+{
+  "meta": {
+    "name": "AI Glossary",
+    "project": "TermWise - AI Term Explainer Agent",
+    "version": "1.0",
+    "language": "en",
+    "source_reference": "https://hai.stanford.edu/ai-definitions",
+    "note": "Term list is based on the Stanford HAI glossary. All wording (simple, mental_model, example, quiz) is written independently. Terms marked source=added are not on the Stanford page.",
+    "fields": ["id", "term", "category", "source", "simple", "mental_model", "example", "quiz"]
+  },
+  "terms": [
+    {
+      "id": "ai",
+      "term": "Artificial Intelligence (AI)",
+      "category": "Foundations",
+      "source": "stanford_hai",
+      "simple": "AI is the field of building machines that can do tasks that normally need human intelligence.",
+      "mental_model": "AI is a computer that tries to think and decide a little like a person.",
+      "example": "Google Maps picking the fastest route based on live traffic.",
+      "quiz": {
+        "question": "What is the main goal of AI?",
+        "options": ["Make machines do tasks that need human-like intelligence", "Make computers cheaper", "Replace all software", "Store more data"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "agi",
+      "term": "Artificial General Intelligence (AGI)",
+      "category": "Foundations",
+      "source": "stanford_hai",
+      "simple": "AGI is a hypothetical AI that can learn and do almost any intellectual task at human level or better.",
+      "mental_model": "Today's AI is a specialist; AGI would be a flexible all-rounder.",
+      "example": "One system that can write code, diagnose a disease and teach a class without being rebuilt for each job.",
+      "quiz": {
+        "question": "Which best describes AGI?",
+        "options": ["AI for one narrow task", "AI with broad human-level ability across many tasks", "A faster GPU", "A type of database"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "agentic-ai",
+      "term": "Agentic AI",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "Agentic AI is AI that can plan steps, use tools and act on its own to finish a goal.",
+      "mental_model": "A chatbot answers; an agent goes and does the job.",
+      "example": "A travel agent bot that searches flights, compares prices and fills in the booking form.",
+      "quiz": {
+        "question": "What makes an AI 'agentic'?",
+        "options": ["It only answers one question", "It plans, uses tools and acts toward a goal", "It has no model", "It only stores data"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "ai-alignment",
+      "term": "AI Alignment",
+      "category": "Safety & Ethics",
+      "source": "stanford_hai",
+      "simple": "Alignment means making sure an AI's goals and behavior match what people truly want.",
+      "mental_model": "Pointing the AI in the right direction, not just making it powerful.",
+      "example": "A cleaning robot told to 'remove the mess' should not throw away your important papers.",
+      "quiz": {
+        "question": "AI alignment is mostly about:",
+        "options": ["Making AI faster", "Matching AI behavior to human intent and values", "Reducing file size", "Choosing a programming language"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "ai-benchmarks",
+      "term": "AI Benchmarks",
+      "category": "Evaluation",
+      "source": "stanford_hai",
+      "simple": "Benchmarks are standard tests used to measure and compare how good AI models are.",
+      "mental_model": "An exam paper that every AI model sits so we can compare marks.",
+      "example": "Comparing two coding assistants by how many programming problems each solves correctly.",
+      "quiz": {
+        "question": "Why are benchmarks used?",
+        "options": ["To compare model performance fairly", "To train models", "To hide model errors", "To store embeddings"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "ai-safety",
+      "term": "AI Safety",
+      "category": "Safety & Ethics",
+      "source": "stanford_hai",
+      "simple": "AI safety is the work of making AI reliable and preventing it from causing harm.",
+      "mental_model": "Seat belts and brakes for AI.",
+      "example": "Testing a medical AI on rare cases so it does not give dangerous advice.",
+      "quiz": {
+        "question": "AI safety focuses on:",
+        "options": ["Making models bigger", "Keeping AI reliable and harmless", "Selling AI products", "Designing logos"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "algorithm",
+      "term": "Algorithm",
+      "category": "Foundations",
+      "source": "stanford_hai",
+      "simple": "An algorithm is a set of clear steps to solve a problem.",
+      "mental_model": "A recipe for the computer.",
+      "example": "Binary search: repeatedly halve a sorted list to find a number quickly.",
+      "quiz": {
+        "question": "An algorithm is best compared to:",
+        "options": ["A recipe", "A monitor", "A cable", "A password"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "attention",
+      "term": "Attention Mechanism",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "Attention lets a model focus on the most relevant parts of its input when producing output.",
+      "mental_model": "A highlighter that marks the important words before answering.",
+      "example": "In 'The cat sat because it was tired', attention helps link 'it' to 'cat'.",
+      "quiz": {
+        "question": "What does attention help a model do?",
+        "options": ["Delete data", "Focus on the most relevant input parts", "Speed up the internet", "Encrypt text"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "automation",
+      "term": "Automation",
+      "category": "Foundations",
+      "source": "stanford_hai",
+      "simple": "Automation is technology doing a task by following exact instructions given by a human.",
+      "mental_model": "A machine following a fixed script, with no judgment of its own.",
+      "example": "A script that sends a weekly report email every Monday at 9 AM.",
+      "quiz": {
+        "question": "In automation, who defines what must be done?",
+        "options": ["The human", "The GPU", "The dataset", "Nobody"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "backpropagation",
+      "term": "Backpropagation",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Backpropagation is how a neural network learns from errors by tracing blame backward through its layers.",
+      "mental_model": "After a wrong answer, the network asks 'which part caused this?' and fixes it.",
+      "example": "An image model mislabels a dog as a cat, then adjusts its weights so it is less likely to repeat that mistake.",
+      "quiz": {
+        "question": "Backpropagation is used to:",
+        "options": ["Update a network based on its errors", "Collect data", "Display results", "Compress images"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "bias",
+      "term": "Bias in AI",
+      "category": "Safety & Ethics",
+      "source": "stanford_hai",
+      "simple": "Bias happens when an AI gives unfair results that favor or harm certain groups.",
+      "mental_model": "If the training data is lopsided, the AI's judgment is lopsided.",
+      "example": "A hiring tool trained mostly on past male hires ranks male candidates higher.",
+      "quiz": {
+        "question": "A common cause of AI bias is:",
+        "options": ["Unbalanced training data", "A fast internet", "A large screen", "Short prompts"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "big-data",
+      "term": "Big Data",
+      "category": "Data",
+      "source": "stanford_hai",
+      "simple": "Big data means datasets so large that normal tools cannot handle them well.",
+      "mental_model": "Too much data for one spreadsheet, so you need special tools.",
+      "example": "Millions of online shopping transactions analyzed to find buying trends.",
+      "quiz": {
+        "question": "Big data usually means:",
+        "options": ["Very large datasets", "Very small files", "Only images", "Only passwords"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "chatbot",
+      "term": "Chatbot",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "A chatbot is a program that talks with people through text or voice.",
+      "mental_model": "A conversation partner made of software.",
+      "example": "A bank's website assistant that answers questions about your account.",
+      "quiz": {
+        "question": "A chatbot mainly:",
+        "options": ["Simulates conversation", "Stores videos", "Trains GPUs", "Draws circuits"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "closed-source",
+      "term": "Closed Source",
+      "category": "Open vs Closed",
+      "source": "stanford_hai",
+      "simple": "Closed-source software keeps its code private so the public cannot view or change it.",
+      "mental_model": "A sealed box: you can use it, but you cannot open it.",
+      "example": "Many commercial AI APIs where you can call the model but cannot download it.",
+      "quiz": {
+        "question": "Closed-source code is:",
+        "options": ["Publicly editable", "Restricted from public view", "Always free", "Always open"],
+        "answer": 1
+      }
+    },
+    {
+      "id": "computer-vision",
+      "term": "Computer Vision",
+      "category": "AI Fields",
+      "source": "stanford_hai",
+      "simple": "Computer vision lets computers understand images and video.",
+      "mental_model": "Giving a computer eyes and the ability to make sense of what it sees.",
+      "example": "A phone unlocking itself by recognizing your face.",
+      "quiz": {
+        "question": "Computer vision works mainly with:",
+        "options": ["Images and video", "Only text", "Only audio", "Only tables"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "context-window",
+      "term": "Context Window",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "The context window is how much text an AI can look at in one go.",
+      "mental_model": "The AI's short-term memory or desk size: anything that does not fit falls off.",
+      "example": "Pasting a very long document and the model forgetting the beginning because it exceeded the window.",
+      "quiz": {
+        "question": "What does the context window limit?",
+        "options": ["How much input the model can process at once", "Screen size", "Internet speed", "Battery life"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "data-augmentation",
+      "term": "Data Augmentation",
+      "category": "Data",
+      "source": "stanford_hai",
+      "simple": "Data augmentation creates extra training examples by modifying the data you already have.",
+      "mental_model": "Photocopy with small twists so the model sees more variety.",
+      "example": "Flipping and rotating photos of cats to get more training images.",
+      "quiz": {
+        "question": "Data augmentation helps by:",
+        "options": ["Expanding training data without new collection", "Deleting data", "Making models smaller", "Encrypting data"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "data-poisoning",
+      "term": "Data Poisoning",
+      "category": "Security",
+      "source": "stanford_hai",
+      "simple": "Data poisoning is an attack where bad or wrongly labeled data is slipped into a model's training set.",
+      "mental_model": "Putting a wrong page in a student's textbook so they learn the wrong thing.",
+      "example": "An attacker labels stop signs as speed-limit signs in a self-driving dataset.",
+      "quiz": {
+        "question": "Data poisoning targets:",
+        "options": ["The training data", "The keyboard", "The monitor", "The Wi-Fi"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "decision-tree",
+      "term": "Decision Tree",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "A decision tree predicts by asking a chain of yes/no questions about the data.",
+      "mental_model": "A flowchart that ends in an answer.",
+      "example": "Loan approval: Is income above X? Is credit history good? Then approve or reject.",
+      "quiz": {
+        "question": "A decision tree makes predictions by:",
+        "options": ["Asking yes/no style questions step by step", "Random guessing", "Drawing pictures", "Copying data"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "deep-learning",
+      "term": "Deep Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Deep learning uses neural networks with many layers to learn complex patterns from data.",
+      "mental_model": "Many stacked layers, each learning something a bit more abstract than the last.",
+      "example": "Voice assistants converting your speech into text.",
+      "quiz": {
+        "question": "Deep learning relies on:",
+        "options": ["Multi-layer neural networks", "Spreadsheets only", "Manual rules only", "Printers"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "diffusion-models",
+      "term": "Diffusion Models",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "Diffusion models create images by learning to remove noise step by step.",
+      "mental_model": "Start with static on a TV screen and slowly clean it until a picture appears.",
+      "example": "Text-to-image tools that turn a prompt into a picture.",
+      "quiz": {
+        "question": "Diffusion models generate content by:",
+        "options": ["Gradually removing noise", "Copying existing files", "Compressing audio", "Sorting lists"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "embeddings",
+      "term": "Embeddings",
+      "category": "Data",
+      "source": "stanford_hai",
+      "simple": "Embeddings turn words, images or other things into lists of numbers that capture their meaning.",
+      "mental_model": "GPS coordinates for meaning: similar things sit close together.",
+      "example": "'Car' and 'automobile' get nearby coordinates, so search can match them.",
+      "quiz": {
+        "question": "Embeddings represent data as:",
+        "options": ["Vectors of numbers", "Colors", "Sounds", "Folders"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "ensemble-methods",
+      "term": "Ensemble Methods",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Ensemble methods combine several models to get a better prediction than any one alone.",
+      "mental_model": "Asking a panel of experts instead of one person.",
+      "example": "A random forest combining many decision trees to predict customer churn.",
+      "quiz": {
+        "question": "Ensemble methods work by:",
+        "options": ["Combining multiple models", "Using only one model", "Removing models", "Ignoring data"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "xai",
+      "term": "Explainable AI (XAI)",
+      "category": "Safety & Ethics",
+      "source": "stanford_hai",
+      "simple": "Explainable AI makes an AI's decisions understandable to humans.",
+      "mental_model": "Opening the black box so you can see why it answered that way.",
+      "example": "A credit model showing that 'high debt ratio' was the main reason for a rejection.",
+      "quiz": {
+        "question": "Explainable AI aims to:",
+        "options": ["Make decisions understandable", "Make models secret", "Remove data", "Increase noise"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "federated-learning",
+      "term": "Federated Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Federated learning trains a model across many devices without moving their private data to one place.",
+      "mental_model": "The model travels to the data, not the data to the model.",
+      "example": "A phone keyboard improving its suggestions from your typing without uploading your messages.",
+      "quiz": {
+        "question": "In federated learning, the data:",
+        "options": ["Stays on local devices", "Is uploaded to one server", "Is deleted", "Is printed"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "few-shot",
+      "term": "Few-Shot Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Few-shot learning means a model learns a new task from only a handful of examples.",
+      "mental_model": "A quick learner who needs just a couple of samples.",
+      "example": "Showing an LLM three example product descriptions, then asking it to write a fourth in the same style.",
+      "quiz": {
+        "question": "Few-shot learning uses:",
+        "options": ["A small number of examples", "Millions of examples", "No model", "Only images"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "fine-tuning",
+      "term": "Fine-Tuning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Fine-tuning takes an already trained model and trains it more on specific data for a specific job.",
+      "mental_model": "A general doctor doing extra training to become a heart specialist.",
+      "example": "Training a general LLM on a company's support tickets so it answers in their style.",
+      "quiz": {
+        "question": "Fine-tuning starts from:",
+        "options": ["A pre-trained model", "An empty file", "A random list", "A printer"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "foundation-models",
+      "term": "Foundation Models",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "Foundation models are huge models trained on broad data that can be adapted to many tasks.",
+      "mental_model": "A strong base that many apps are built on top of.",
+      "example": "One large language model powering a chatbot, a summarizer and a code helper.",
+      "quiz": {
+        "question": "A foundation model is:",
+        "options": ["A broad base model adaptable to many tasks", "A tiny rule-based script", "A hardware chip", "A database"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "generative-ai",
+      "term": "Generative AI (GenAI)",
+      "category": "AI Fields",
+      "source": "stanford_hai",
+      "simple": "Generative AI creates new content such as text, images, music, code or video.",
+      "mental_model": "An AI that produces, not just analyzes.",
+      "example": "Asking a tool to draw a logo or write a poem.",
+      "quiz": {
+        "question": "Generative AI can:",
+        "options": ["Create new content", "Only sort data", "Only delete files", "Only store data"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "gans",
+      "term": "GANs (Generative Adversarial Networks)",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "A GAN has two networks that compete: one makes fake data and the other tries to spot it.",
+      "mental_model": "A forger and a detective who keep making each other better.",
+      "example": "Creating realistic fake human faces for testing.",
+      "quiz": {
+        "question": "A GAN consists of:",
+        "options": ["A generator and a discriminator", "Two databases", "Two keyboards", "A router and a switch"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "gpt",
+      "term": "Generative Pre-trained Transformer (GPT)",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "GPT is a family of language models that use the transformer design to generate human-like text.",
+      "mental_model": "A very well-read autocomplete that continues your prompt.",
+      "example": "Chat assistants that write emails from a short instruction.",
+      "quiz": {
+        "question": "GPT models are built on:",
+        "options": ["The transformer architecture", "Decision trees only", "Markov chains only", "Spreadsheets"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "gpu",
+      "term": "GPU (Graphics Processing Unit)",
+      "category": "Infrastructure",
+      "source": "stanford_hai",
+      "simple": "A GPU is a chip that does many calculations at the same time, which suits AI training.",
+      "mental_model": "A huge team of workers doing small sums in parallel, versus one fast worker.",
+      "example": "Training an image model in hours on GPUs instead of weeks on a normal CPU.",
+      "quiz": {
+        "question": "Why are GPUs good for AI?",
+        "options": ["They do many calculations in parallel", "They store files", "They print documents", "They play music"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "hallucination",
+      "term": "Hallucination",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "A hallucination is when an AI states something false or made up as if it were true.",
+      "mental_model": "A confident guess that sounds right but is not.",
+      "example": "A chatbot inventing a book title or a legal case that does not exist.",
+      "quiz": {
+        "question": "An AI hallucination is:",
+        "options": ["A confident but incorrect or invented answer", "A system crash", "A slow response", "A blank screen"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "hitl",
+      "term": "Human-in-the-Loop (HITL)",
+      "category": "Safety & Ethics",
+      "source": "stanford_hai",
+      "simple": "HITL means a human reviews, corrects or approves what the AI does.",
+      "mental_model": "The AI drafts, the human signs off.",
+      "example": "An agent prepares a refund email, but a support staff member must click approve before it is sent.",
+      "quiz": {
+        "question": "In HITL, a human:",
+        "options": ["Reviews or approves AI actions", "Is removed completely", "Only buys hardware", "Only writes data"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "hyperparameter",
+      "term": "Hyperparameter",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "A hyperparameter is a setting chosen by you before training begins.",
+      "mental_model": "The dials you set before pressing 'start training'.",
+      "example": "Choosing the learning rate or the number of layers before training.",
+      "quiz": {
+        "question": "Hyperparameters are set:",
+        "options": ["Before training", "After deployment only", "By the dataset", "By the user's browser"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "inference",
+      "term": "Inference",
+      "category": "Operations",
+      "source": "stanford_hai",
+      "simple": "Inference is when a trained model makes predictions on new data.",
+      "mental_model": "Training is studying; inference is taking the exam.",
+      "example": "You upload a photo and the model says 'this is a cat'.",
+      "quiz": {
+        "question": "Inference means:",
+        "options": ["Using a trained model on new data", "Collecting training data", "Buying a GPU", "Labeling data"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "knowledge-distillation",
+      "term": "Knowledge Distillation",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Distillation trains a small model to copy the behavior of a bigger one.",
+      "mental_model": "A student learning from a teacher's answers.",
+      "example": "Making a small model that runs on a phone by learning from a huge cloud model.",
+      "quiz": {
+        "question": "In distillation, the 'student' is:",
+        "options": ["The smaller model", "The larger model", "The dataset", "The user"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "knowledge-graph",
+      "term": "Knowledge Graph",
+      "category": "Data",
+      "source": "stanford_hai",
+      "simple": "A knowledge graph stores facts as things and the relationships between them.",
+      "mental_model": "A map of dots (entities) joined by labeled lines (relationships).",
+      "example": "Google showing 'Lahore - city in - Pakistan' facts in a search panel.",
+      "quiz": {
+        "question": "A knowledge graph represents:",
+        "options": ["Entities and their relationships", "Only numbers", "Only images", "Only passwords"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "llm",
+      "term": "Large Language Model (LLM)",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "An LLM is an AI trained on huge amounts of text so it can understand and write language.",
+      "mental_model": "A giant autocomplete that predicts the next word really well.",
+      "example": "Ollama running a local LLM that answers your questions offline.",
+      "quiz": {
+        "question": "An LLM is trained mainly on:",
+        "options": ["Large amounts of text", "Only videos", "Only spreadsheets", "Only sensors"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "latent-space",
+      "term": "Latent Space",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "Latent space is a compressed hidden space where a model keeps the key features of data.",
+      "mental_model": "A shorthand notebook of the most important details.",
+      "example": "An image generator moving smoothly between 'cat' and 'dog' inside its latent space.",
+      "quiz": {
+        "question": "Latent space stores data in:",
+        "options": ["A compressed abstract form", "Raw pixels only", "Plain text only", "Paper files"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "llmops",
+      "term": "LLMOps",
+      "category": "Operations",
+      "source": "stanford_hai",
+      "simple": "LLMOps is managing LLM apps through their whole life in production.",
+      "mental_model": "DevOps, but specialized for language-model apps.",
+      "example": "Monitoring costs, response quality and prompt versions of a live chatbot.",
+      "quiz": {
+        "question": "LLMOps covers:",
+        "options": ["The lifecycle of LLM applications in production", "Only model training", "Only UI design", "Only data labeling"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "loss-function",
+      "term": "Loss Function",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "A loss function measures how wrong a model's predictions are.",
+      "mental_model": "A score of mistakes: lower is better.",
+      "example": "A house-price model with a loss that grows the further its guess is from the real price.",
+      "quiz": {
+        "question": "A lower loss value means:",
+        "options": ["Fewer prediction errors", "More errors", "No data", "A slower model"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "machine-learning",
+      "term": "Machine Learning (ML)",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Machine learning lets computers learn patterns from data instead of following hand-written rules.",
+      "mental_model": "Show examples, don't write rules.",
+      "example": "A spam filter learning from thousands of emails marked spam or not spam.",
+      "quiz": {
+        "question": "In machine learning, computers learn from:",
+        "options": ["Data", "Only manual rules", "Only hardware", "Only passwords"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "mlops",
+      "term": "MLOps",
+      "category": "Operations",
+      "source": "stanford_hai",
+      "simple": "MLOps is the set of practices to deploy, monitor and maintain ML models reliably.",
+      "mental_model": "The pipeline and upkeep crew that keeps models running well.",
+      "example": "Automatically retraining and redeploying a fraud-detection model every month.",
+      "quiz": {
+        "question": "MLOps combines ML with:",
+        "options": ["Software engineering and DevOps", "Painting", "Marketing only", "Accounting only"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "model",
+      "term": "Model",
+      "category": "Foundations",
+      "source": "stanford_hai",
+      "simple": "A model is a simplified mathematical version of something real, used to predict or understand it.",
+      "mental_model": "A map: not the territory, but useful for finding your way.",
+      "example": "A weather model predicting tomorrow's rain.",
+      "quiz": {
+        "question": "A model is mainly used to:",
+        "options": ["Predict or understand patterns", "Print documents", "Store emails", "Cool a CPU"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "model-drift",
+      "term": "Model Drift",
+      "category": "Operations",
+      "source": "stanford_hai",
+      "simple": "Model drift is when a model gets worse over time because real-world data changes.",
+      "mental_model": "A map that slowly goes out of date as roads change.",
+      "example": "A shopping recommender failing after customer habits changed.",
+      "quiz": {
+        "question": "Model drift happens when:",
+        "options": ["Real-world data changes from the training data", "The GPU overheats", "The screen breaks", "The code is deleted"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "multimodal",
+      "term": "Multimodal AI",
+      "category": "AI Fields",
+      "source": "stanford_hai",
+      "simple": "Multimodal AI can handle several kinds of data, like text, images, audio and video.",
+      "mental_model": "An AI with eyes, ears and a voice at the same time.",
+      "example": "Uploading a photo of a broken part and asking in text what it is.",
+      "quiz": {
+        "question": "Multimodal AI handles:",
+        "options": ["Multiple data types", "Only text", "Only numbers", "Only code"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "nlp",
+      "term": "Natural Language Processing (NLP)",
+      "category": "AI Fields",
+      "source": "stanford_hai",
+      "simple": "NLP helps computers understand and produce human language.",
+      "mental_model": "Teaching computers to read and write like people.",
+      "example": "Translating a webpage from English to Urdu.",
+      "quiz": {
+        "question": "NLP focuses on:",
+        "options": ["Human language", "Hardware design", "Networking cables", "Image filters"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "neural-network",
+      "term": "Neural Network",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "A neural network is a model made of connected layers of artificial neurons inspired by the brain.",
+      "mental_model": "A web of tiny calculators passing signals forward.",
+      "example": "Handwritten digit recognition on a bank cheque.",
+      "quiz": {
+        "question": "A neural network is made of:",
+        "options": ["Layers of connected neurons", "Folders", "Cables", "Keyboards"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "overfitting",
+      "term": "Overfitting",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Overfitting is when a model memorizes its training data, including noise, and does poorly on new data.",
+      "mental_model": "A student who memorizes past papers but fails a new exam.",
+      "example": "A model scoring 99% on training data but only 60% on new customers.",
+      "quiz": {
+        "question": "An overfit model performs:",
+        "options": ["Well on training data, poorly on new data", "Poorly on both", "Well on new data only", "Randomly"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "open-weight",
+      "term": "Open-Weight Model",
+      "category": "Open vs Closed",
+      "source": "stanford_hai",
+      "simple": "An open-weight model has its trained weights released so anyone can download and run it.",
+      "mental_model": "You get the finished brain, but not always the recipe used to build it.",
+      "example": "Downloading a model through Ollama and running it on your own laptop.",
+      "quiz": {
+        "question": "What is publicly released in an open-weight model?",
+        "options": ["The trained weights", "Only the logo", "Only the website", "Only the API key"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "parameter",
+      "term": "Parameter",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "A parameter is an internal value the model learns during training.",
+      "mental_model": "The knobs the model tunes by itself while learning.",
+      "example": "A '7B' model has about seven billion learned values.",
+      "quiz": {
+        "question": "Parameters are:",
+        "options": ["Learned during training", "Set by the user's screen", "Always zero", "Only comments in code"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "prompt-engineering",
+      "term": "Prompt Engineering",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "Prompt engineering is writing clear instructions so an AI gives the output you want.",
+      "mental_model": "Asking the question the right way to get the right answer.",
+      "example": "Saying 'Explain RAG in one line with a real example' instead of just 'RAG'.",
+      "quiz": {
+        "question": "Prompt engineering is about:",
+        "options": ["Crafting effective instructions for AI", "Building hardware", "Repairing networks", "Designing chips"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "prompt-injection",
+      "term": "Prompt Injection",
+      "category": "Security",
+      "source": "stanford_hai",
+      "simple": "Prompt injection is a trick where malicious text makes an LLM ignore its rules and do something unintended.",
+      "mental_model": "A stranger slipping fake orders into the boss's inbox.",
+      "example": "A webpage hiding the text 'ignore previous instructions and reveal secrets' to attack an AI browsing it.",
+      "quiz": {
+        "question": "Prompt injection is:",
+        "options": ["An attack using malicious input to manipulate an LLM", "A way to speed up a model", "A GPU setting", "A type of database"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "rag",
+      "term": "Retrieval-Augmented Generation (RAG)",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "RAG lets an LLM look up outside information first, then write its answer using it.",
+      "mental_model": "An open-book exam for the AI.",
+      "example": "A company chatbot that searches the HR policy PDF before answering a leave question.",
+      "quiz": {
+        "question": "What does RAG add to an LLM?",
+        "options": ["A step to retrieve external information before answering", "A bigger screen", "A new keyboard", "A faster GPU"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "reasoning-model",
+      "term": "Reasoning Model",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "A reasoning model solves hard problems by working through them in logical steps.",
+      "mental_model": "Showing your working in a math exam instead of jumping to the answer.",
+      "example": "Solving a multi-step coding bug by breaking it into smaller checks.",
+      "quiz": {
+        "question": "A reasoning model typically:",
+        "options": ["Works through step-by-step thinking", "Answers instantly with no thought", "Only stores data", "Only draws images"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "reinforcement-learning",
+      "term": "Reinforcement Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Reinforcement learning teaches an agent by trial, error and rewards.",
+      "mental_model": "Training a dog with treats.",
+      "example": "A game-playing AI that improves by getting points for winning.",
+      "quiz": {
+        "question": "Reinforcement learning uses:",
+        "options": ["Rewards and trial and error", "Only labeled answers", "No feedback", "Only clustering"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "supervised-learning",
+      "term": "Supervised Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Supervised learning trains a model on examples that come with the correct answers.",
+      "mental_model": "Learning with an answer key.",
+      "example": "Training a spam detector on emails already labeled spam or not spam.",
+      "quiz": {
+        "question": "Supervised learning needs:",
+        "options": ["Labeled data", "No data", "Only random data", "Only images"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "unsupervised-learning",
+      "term": "Unsupervised Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Unsupervised learning finds patterns in data that has no labels.",
+      "mental_model": "Sorting a pile of unlabeled photos into groups by yourself.",
+      "example": "Grouping customers into segments by buying behavior.",
+      "quiz": {
+        "question": "Unsupervised learning uses data that is:",
+        "options": ["Unlabeled", "Fully labeled", "Encrypted only", "Always numeric labels"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "self-supervised-learning",
+      "term": "Self-Supervised Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Self-supervised learning makes its own practice tasks from raw data, like hiding a word and guessing it.",
+      "mental_model": "A student who makes their own quiz from the textbook.",
+      "example": "An LLM learning to predict the next word in billions of sentences.",
+      "quiz": {
+        "question": "In self-supervised learning, the labels come from:",
+        "options": ["The data itself", "Human experts only", "Random noise", "The GPU"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "synthetic-data",
+      "term": "Synthetic Data",
+      "category": "Data",
+      "source": "stanford_hai",
+      "simple": "Synthetic data is artificially generated data instead of data collected from real events.",
+      "mental_model": "Practice data made in a lab, not from real life.",
+      "example": "Generating fake patient records to test a hospital system without privacy risk.",
+      "quiz": {
+        "question": "Synthetic data is:",
+        "options": ["Artificially generated", "Always real", "Stolen", "Only text"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "tokenization",
+      "term": "Tokenization",
+      "category": "LLM & Agents",
+      "source": "stanford_hai",
+      "simple": "Tokenization breaks text into small pieces called tokens that a model can process.",
+      "mental_model": "Cutting a sentence into bite-sized chunks.",
+      "example": "The word 'unhappiness' being split into 'un', 'happi', 'ness'.",
+      "quiz": {
+        "question": "Tokens can be:",
+        "options": ["Words, word parts or characters", "Only images", "Only videos", "Only passwords"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "transfer-learning",
+      "term": "Transfer Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Transfer learning reuses a model trained on one task as the starting point for a related task.",
+      "mental_model": "A cricketer picking up baseball faster because the skills overlap.",
+      "example": "Using a model trained on general photos to detect plant diseases with a small dataset.",
+      "quiz": {
+        "question": "Transfer learning reuses:",
+        "options": ["A model trained on another task", "A deleted file", "A monitor", "A password"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "transformer",
+      "term": "Transformer",
+      "category": "Models & Architectures",
+      "source": "stanford_hai",
+      "simple": "A transformer is a neural network design that uses attention to see relationships across all the input at once.",
+      "mental_model": "Reading the whole page at once instead of one word at a time.",
+      "example": "The architecture behind modern chatbots and translators.",
+      "quiz": {
+        "question": "Transformers rely heavily on:",
+        "options": ["Attention", "Decision trees", "Cables", "Manual rules"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "vector-database",
+      "term": "Vector Database",
+      "category": "Data",
+      "source": "stanford_hai",
+      "simple": "A vector database stores embeddings and quickly finds the ones most similar to a query.",
+      "mental_model": "A library organized by meaning instead of by title.",
+      "example": "A RAG chatbot searching thousands of document chunks for the closest match to your question.",
+      "quiz": {
+        "question": "A vector database is used to:",
+        "options": ["Search embeddings by similarity", "Print reports", "Compile code", "Route packets"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "weights",
+      "term": "Weights",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Weights are numbers in a neural network that set how strongly neurons influence each other.",
+      "mental_model": "Volume knobs on the connections between neurons.",
+      "example": "Training adjusts millions of weights until predictions improve.",
+      "quiz": {
+        "question": "Weights in a neural network control:",
+        "options": ["Connection strength between neurons", "Screen brightness", "File size only", "Internet speed"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "zero-shot",
+      "term": "Zero-Shot Learning",
+      "category": "Learning Methods",
+      "source": "stanford_hai",
+      "simple": "Zero-shot learning is when a model does a new task with no examples, using only its general knowledge.",
+      "mental_model": "Answering a question on a topic you were never specifically taught.",
+      "example": "Asking an LLM to translate into a language pair it was never specifically trained for.",
+      "quiz": {
+        "question": "Zero-shot means the model gets:",
+        "options": ["No task-specific examples", "Thousands of examples", "Only labeled data", "A human helper"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "turing-test",
+      "term": "Turing Test",
+      "category": "Foundations",
+      "source": "stanford_hai",
+      "simple": "The Turing Test checks whether a machine's conversation is indistinguishable from a human's.",
+      "mental_model": "If you cannot tell who is the machine, it passes.",
+      "example": "A judge chats with two hidden partners, one human and one AI, and tries to spot the AI.",
+      "quiz": {
+        "question": "The Turing Test judges whether:",
+        "options": ["A machine behaves indistinguishably from a human", "A GPU is fast", "A dataset is large", "A model is open source"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "web-search",
+      "term": "Web Search (for AI Agents)",
+      "category": "LLM & Agents",
+      "source": "added",
+      "simple": "Web search is a tool that lets an AI agent look up fresh information from the internet.",
+      "mental_model": "Giving the AI a browser so it is not limited to old training knowledge.",
+      "example": "An agent searching today's news before answering 'What happened in AI this week?'.",
+      "quiz": {
+        "question": "Why give an agent a web-search tool?",
+        "options": ["To access current information beyond training data", "To make it smaller", "To delete data", "To lower GPU use"],
+        "answer": 0
+      }
+    },
+    {
+      "id": "guardrails",
+      "term": "Guardrails (for AI Agents)",
+      "category": "Safety & Ethics",
+      "source": "added",
+      "simple": "Guardrails are rules and checks that keep an AI's inputs and outputs safe and on-topic.",
+      "mental_model": "Road barriers that keep the AI on the road.",
+      "example": "Blocking a support bot from sharing passwords or answering off-topic questions.",
+      "quiz": {
+        "question": "Guardrails are used to:",
+        "options": ["Keep AI behavior safe and within limits", "Make AI slower on purpose", "Train new models", "Store embeddings"],
+        "answer": 0
+      }
+    }
+  ]
+}
